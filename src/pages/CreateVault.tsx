@@ -275,9 +275,8 @@ export default function CreateVault() {
           <div
             className="absolute left-0 top-1/2 h-1 bg-green-600 -translate-y-1/2 rounded"
             style={{
-              width: `${
-                totalSteps <= 1 ? 0 : ((step - 1) / (totalSteps - 1)) * 100
-              }%`,
+              width: `${totalSteps <= 1 ? 0 : ((step - 1) / (totalSteps - 1)) * 100
+                }%`,
             }}
           />
 
@@ -286,13 +285,12 @@ export default function CreateVault() {
               (number) => (
                 <div
                   key={number}
-                  className={`w-12 h-12 rounded-full flex items-center justify-center text-white ${
-                    number < step
-                      ? "bg-green-600"
-                      : number === step
+                  className={`w-12 h-12 rounded-full flex items-center justify-center text-white ${number < step
+                    ? "bg-green-600"
+                    : number === step
                       ? "bg-blue-600"
                       : "bg-gray-300"
-                  }`}
+                    }`}
                 >
                   {number < step ? <Check className="w-5 h-5" /> : number}
                 </div>
@@ -449,11 +447,10 @@ export default function CreateVault() {
                     setTermsModalOpen(true);
                     setTermsViewed(true);
                   }}
-                  className={`w-full py-3 rounded transition font-medium ${
-                    termsViewed
-                      ? "bg-gray-300 text-gray-600"
-                      : "bg-blue-600 text-white hover:bg-blue-700"
-                  }`}
+                  className={`w-full py-3 rounded transition font-medium ${termsViewed
+                    ? "bg-gray-300 text-gray-600"
+                    : "bg-blue-600 text-white hover:bg-blue-700"
+                    }`}
                 >
                   {termsViewed ? "이용약관 확인 완료" : "이용약관 보기"}
                 </button>
